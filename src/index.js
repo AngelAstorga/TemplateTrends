@@ -1,4 +1,4 @@
-import './styles/main.scss';
-import mainImage from './assets/images/universe.jpg';
+import '@styles/main.scss';
+import mainImage from '@images/universe.jpg';
 
-img.src = mainImage;
+var img= mainImage;
