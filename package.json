@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js",
+    "build-netlify": "node ./scripts/create-env.js && webpack --config webpack.config.js",
     "dev": "webpack --config webpack.config.dev.js",
+    "dev-a": "webpack --config webpack.config.dev.analyzer.js",
     "dev-w": "webpack --watch --config webpack.config.dev.js"
   },
   "repository": {
@@ -33,6 +35,7 @@
     "sass": "^1.32.8",
     "sass-loader": "^11.0.1",
     "webpack": "^5.24.2",
+    "webpack-bundle-analyzer": "^4.4.0",
     "webpack-cli": "^4.5.0"
   }
 }

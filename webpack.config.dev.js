@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 
+
 module.exports ={
     entry: './src/index.js',
     output:{
@@ -12,6 +13,7 @@ module.exports ={
         assetModuleFilename: 'assets/images/[name][ext]'
     },
     mode: 'development',
+    devtool: 'source-map',
     resolve:{
         alias:{
             '@images': path.resolve(__dirname,'src/assets/images'),

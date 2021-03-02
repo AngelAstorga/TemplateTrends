@@ -1,1 +1,18 @@
-@font-face{font-family:"Ubuntu";src:url(../assets/fonts/ubuntu-v15-latin-300.woff) format("woff"),url(../assets/fonts/ubuntu-v15-latin-300.woff2) format("woff2");font-weight:300;font-style:normal}body{background-color:blue;background-image:url(../assets/images/universe.jpg);background-size:cover}h1{font-size:100px;font-family:"Ubuntu",sans-serif}
+@font-face {
+  font-family: "Ubuntu";
+  src: url(../assets/fonts/ubuntu-v15-latin-300.woff) format("woff"), url(../assets/fonts/ubuntu-v15-latin-300.woff2) format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+body {
+  background-color: blue;
+  background-image: url(../assets/images/universe.jpg);
+  background-size: cover;
+}
+
+h1 {
+  font-size: 100px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map*/
