@@ -1,0 +1,65 @@
+.stories-1{
+    position: relative;
+    z-index: $middle;
+    top: calc(100vh);
+    height: auto;
+    width: 100%;
+    background-color: $bgc-stories;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    &__header{
+        display:flex;
+        flex-flow: column;
+        align-items: center;
+        height: auto;
+        width: 70%;
+    }
+    &__icon{
+        margin-top: 35px;
+        background-image: url('@images/flower.svg');
+        width: 75px;
+        height: 25px;
+        display: block;
+    }
+    &__title{
+        font-family: 'Ubuntu', Helvetica, sans-serif;
+        font-weight: 400;
+        letter-spacing: .2em;
+    }
+    &__options{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        letter-spacing: .12em;
+        font-size: .8em;
+        font-weight: 500;
+    }
+    &__sort{
+        border-bottom: 1px solid black;
+        width: 150px;
+        font-family: 'Ubuntu', Helvetica, sans-serif;
+        line-height: 2em;
+        font-size: .9em;
+        span{
+            display: inline-block;
+            margin-left: 60px;
+        }
+    }
+    &__list{
+        list-style: none;
+        display: flex;
+        li{
+            margin-left: 30px;
+        }
+    }
+    &__link{
+        text-decoration: none;
+        color: black;
+        font-family: 'Ubuntu', Helvetica, sans-serif;
+    }
+}
+

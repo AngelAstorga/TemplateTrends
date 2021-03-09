@@ -1,0 +1,61 @@
+.container{
+    box-shadow: 1px 1px 7px $color-shadow;
+    height: 50px;
+    z-index: 1000;
+    width: 100%;
+    background-color: $bgc-header;
+    position: fixed;
+    top:0;
+}
+
+.header{
+    height: 100%;
+    background-color: $bgc-header;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 7%;
+
+ &__containerLeft{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+ }
+ &__menu{
+   background-image: url('@images/menu.svg');
+   width: 25px;
+   height: 25px;
+   margin-right: 30px;
+   cursor: pointer;
+ }
+ &__shop{
+    font-size: 1.1em;
+    cursor: pointer;
+ }
+ &__title{
+     font-size: 2em;
+     cursor: pointer;
+ }
+ &__containerRight{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+ }
+ &__search{
+     background-image: url('@images/search.svg');
+     width: 22px;
+     height: 22px;
+     margin-right: 30px;
+     cursor: pointer;
+ }
+ &__cart{
+     font-size: 1.1em;
+     cursor: pointer;
+ }
+}

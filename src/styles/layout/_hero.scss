@@ -1,0 +1,30 @@
+.hero{
+    background-image: url('@images/universe.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 90vh;
+    position: fixed;
+    top: 50px;
+    z-index: $back;
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top: 70vh;
+    }
+    &__title{
+        margin: 0;
+        font-size: 2.7rem;
+        color: $color-hero-title;
+    }
+    &__button{
+        background-color: transparent;
+        padding: 10px;
+        margin-top:17px;
+        border: 2px solid white;
+        color: white;
+        font-weight: 400;
+    }
+}

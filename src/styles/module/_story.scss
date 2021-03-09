@@ -1,0 +1,78 @@
+.stories{
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Ubuntu', Helvetica, sans-serif;
+
+}
+
+.story{
+    width: 48%;
+    box-sizing: border-box;
+    margin-bottom:35px ;
+    &__image{
+        max-width: 100%;
+        height: 250px;
+        overflow: hidden;
+
+    }
+    &__description{
+        background-color: $bgc-story;
+        display: flex;
+        flex-direction: column;
+    }
+    &__tags{
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-left: 15px;;
+
+        h3::after{
+            content: '|';
+            font-weight: 700;
+            font-size: 0.8em;
+            margin-left: 3px;
+            color: #000;
+
+        }
+        h3{
+            font-weight: 400;
+            font-size: 1em;
+            color: $color-gray;
+            letter-spacing: .07em;
+            
+        }
+        span{
+            margin-left: 3px;
+            font-weight: 400;
+            font-size: 0.7em;
+            margin-top: 3px;
+        }
+    }
+    &__title{
+        border-bottom: 1px solid #9dd9c5;
+        width: fit-content;
+        background-color: transparent;
+        margin-left: 15px;
+        font-size: 1.1em;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 4px;
+    }
+    &__text{
+        letter-spacing: .1em;
+        font-weight: 300;
+        margin-left: 15px;
+        margin-right: 40px;
+        
+    }
+    &__date{
+        align-self: flex-end;
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
+}

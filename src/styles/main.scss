@@ -1,16 +1,25 @@
+@import 'base/colors';
+@import 'base/fonts';
+@import 'base/variables';
 
-@font-face{
-    font-family: 'Ubuntu';
-    src: url('@fonts/ubuntu-v15-latin-300.woff') format('woff'),
-         url('@fonts/ubuntu-v15-latin-300.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-}
-body{
-    background-color: blue;
-    background-image: url('@images/universe.jpg');
-    background-size: cover;
-}
+
+@import 'module/story';
+@import 'module/button';
+
+@import 'base/reset';
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/content';
+@import 'layout/space-1';
+@import 'layout/space-2';
+@import 'layout/stories-1';
+@import 'layout/stories-2';
+@import 'layout/films';
+@import 'layout/blog';
+@import 'layout/footer';
+
+
+
 
 h1{
     font-size: 100px;

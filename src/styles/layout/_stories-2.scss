@@ -1,0 +1,19 @@
+.stories-2{
+    position: relative;
+    z-index: 1001;
+    top:calc(100vh);
+    height: auto;
+    width: 100%;
+    background-color: $bgc-stories;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 45px;
+    font-family: 'Ubuntu', Helvetica, sans-serif;
+
+    &__more{
+        text-decoration: none;
+        color: $color-gray;
+        font-size: .8em;
+    }
+}

@@ -6,165 +6,178 @@
     <title>Your Brand</title>
 <script defer src="index.js"></script><link href="style/main.css" rel="stylesheet"></head>
 <body>
-    <header class="header">
-        <div><i>Burger Menu</i> <span>description</span></div>
-        <div><h1>Brand</h1></div>
-        <div><i>search</i><span>Cart</span></div>
-    </header>
+    <div class="container">
+        <header class="header">
+            <div class="header__containerLeft"><i class="header__menu"></i> <span class="header__shop">SHOP</span></div>
+            <div class="header__brand"><h1 class="header__title">Brand</h1></div>
+            <div class="header__containerRight"><i class="header__search"></i><span class="header__cart">CART</span></div>
+        </header>
+    </div>
     <section class="hero">
-        <h2>A cotton Canvas</h2>
-        <button> READ THIS STORY</button>
-    </section>
-    <section class="space">
-        <div></div>
-        <div><span>About us</span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis unde repudiandae sapiente, doloribus molestias saepe odit quae quisquam id possimus!</p></div>
-    </section>
-    <section class="stories">
-        <div>
-            <i>Icon</i>
-            <h2>THe stories</h2>
+        <div class="hero__wrapper">
+            <h2 class="hero__title">A cotton Canvas</h2>
+            <button class="hero__button"> READ THIS STORY</button>
         </div>
-        <div>
-            <div>sort by</div>
-            <div>
-                <ul>
-                    <li><a href="">SEE FILMS</a></li>
-                    <li><a href="">SEE ALL STORIES</a></li>
-                </ul>
-            </div>
-        </div>
-        <article>
-            <div>
-                <figure><img src="" alt=""></figure>
-                <div>
-                    <span>Title of Image</span>
-                    <span>Type</span>
-                </div>
-                <h3>Title of article</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, accusamus.</p>
-                <span>12.01.21</span>
-            </div>
-        </article>
-        <article>
-            <div>
-                <figure><img src="" alt=""></figure>
-                <div>
-                    <span>Title of Image</span>
-                    <span>Type</span>
-                </div>
-                <h3>Title of article</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, accusamus.</p>
-                <span>12.01.21</span>
-            </div>
-        </article>
-        <article>
-            <div>
-                <figure><img src="" alt=""></figure>
-                <div>
-                    <span>Title of Image</span>
-                    <span>Type</span>
-                </div>
-                <h3>Title of article</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, accusamus.</p>
-                <span>12.01.21</span>
-            </div>
-        </article>
-        <article>
-            <div>
-                <figure><img src="" alt=""></figure>
-                <div>
-                    <span>Title of Image</span>
-                    <span>Type</span>
-                </div>
-                <h3>Title of article</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, accusamus.</p>
-                <span>12.01.21</span>
-            </div>
-        </article>
     </section>
-    <section class="space-2">
-        <div>
-            <h2>Future --- Past</h2>
-            <span>subtitle</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consectetur neque a dignissimos, quod amet et beatae sit doloremque eaque aliquam eveniet natus dolor reiciendis commodi qui, repellendus magni, tempore veritatis voluptas. Consequuntur iusto quidem eos voluptatem neque? Perspiciatis, esse.</p>
-            <button>shop now</button>
-        </div>
-        <div>
+    <div class="content">
+        <section class="space-1">
+            <div class="space-1__phrase"><h2>design <span>and</span> travel</h2></div>
+            <div class="space-1__description"> <p><span>ABOUT US</span><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis unde repudiandae sapiente, doloribus molestias saepe odit quae quisquam id possimus!</p></div>
+        </section>
+    
+    <section class="stories-1">
+            <div class="stories-1__header">
+                <i class="stories-1__icon"></i>
+                <h2 class="stories-1__title">THE STORIES</h2>
+            </div>
+            <div class="stories-1__options">
+                <div class="stories-1__sort">SORT BY <span>+</span></div>
+                <div class="stories-1__see">
+                    <ul class="stories-1__list">
+                        <li><a class="stories-1__link" href="">SEE FILMS ></a></li>
+                        <li><a class="stories-1__link" href="">SEE ALL STORIES ></a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="stories">
+                <article class="story">
+                        <figure class="story__image"><img width='100%' src="assets/images/story-1.jpg" alt=""></figure>
+                        <div class="story__description">
+                            <div class="story__tags">
+                                <h3>Angel Astorga</h3>
+                                <span>ART</span>
+                            </div>
+                            <h3 class="story__title">WHAT DO YOU DO?</h3>
+                            <p class="story__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, accusamus.</p>
+                            <span class="story__date">12.01.21</span>
+                        </div>
+                </article>
+                <article class="story">
+                        <figure class="story__image"><img width='100%' src="assets/images/story-2.jpg" alt=""></figure>
+                        <div class="story__description">
+                            <div class="story__tags">
+                                <h3>Angel Astorga</h3>
+                                <span>ART</span>
+                            </div>
+                            <h3 class="story__title">WHAT DO YOU DO?</h3>
+                            <p class="story__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, accusamus.</p>
+                            <span class="story__date">12.01.21</span>
+                        </div>
+                </article>
+                <article class="story">
+                        <figure class="story__image"><img width='100%' src="assets/images/story-3.jpg" alt=""></figure>
+                        <div class="story__description">
+                            <div class="story__tags">
+                                <h3>Angel Astorga</h3>
+                                <span>ART</span>
+                            </div>
+                            <h3 class="story__title">WHAT DO YOU DO?</h3>
+                            <p class="story__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, accusamus.</p>
+                            <span class="story__date">12.01.21</span>
+                        </div>
+                </article>
+                <article class="story">
+                        <figure class="story__image"><img width='100%' src="assets/images/story-4.jpg" alt=""></figure>
+                        <div class="story__description">
+                            <div class="story__tags">
+                                <h3>Angel Astorga</h3>
+                                <span>ART</span>
+                            </div>
+                            <h3 class="story__title">WHAT DO YOU DO?</h3>
+                            <p class="story__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, accusamus.</p>
+                            <span class="story__date">12.01.21</span>
+                        </div>
+                </article>
+    
+                
+            </div>
+        </section>
+        <section class="space-2">
+            <div class="space-2__part1">
+                <h2>Future - Past</h2>
+                <span>subtitle</span>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consectetur neque a dignissimos, quod amet et beatae sit doloremque eaque aliquam eveniet natus dolor reiciendis commodi qui, repellendus magni, tempore veritatis voluptas. Consequuntur iusto quidem eos voluptatem neque? Perspiciatis, esse.</p>
+                <button class="button">SHOP NOW</button>
+            </div>
+            <div class="space-2__part2">
 
-        </div>
-    </section>
-    <section class="stories">
-        <div>
-            <article>
-                <div>
-                    <figure><img src="" alt=""></figure>
-                    <div>
-                        <span>Title of Image</span>
-                        <span>Type</span>
+            </div>
+        </section>
+        <section class="stories-2">
+            <div class="stories">
+                <article class="story">
+                    <figure class="story__image"><img width='100%' src="assets/images/story-5.jpg" alt=""></figure>
+                    <div class="story__description">
+                        <div class="story__tags">
+                            <h3>Angel Astorga</h3>
+                            <span>ART</span>
+                        </div>
+                        <h3 class="story__title">WHAT DO YOU DO?</h3>
+                        <p class="story__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, accusamus.</p>
+                        <span class="story__date">12.01.21</span>
                     </div>
-                    <h3>Title of article</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, accusamus.</p>
-                    <span>12.01.21</span>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <figure><img src="" alt=""></figure>
-                    <div>
-                        <span>Title of Image</span>
-                        <span>Type</span>
+                </article>
+                <article class="story">
+                    <figure class="story__image"><img width='100%' src="assets/images/story-6.jpg" alt=""></figure>
+                    <div class="story__description">
+                        <div class="story__tags">
+                            <h3>Angel Astorga</h3>
+                            <span>ART</span>
+                        </div>
+                        <h3 class="story__title">WHAT DO YOU DO?</h3>
+                        <p class="story__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, accusamus.</p>
+                        <span class="story__date">12.01.21</span>
                     </div>
-                    <h3>Title of article</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, accusamus.</p>
-                    <span>12.01.21</span>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <figure><img src="" alt=""></figure>
-                    <div>
-                        <span>Title of Image</span>
-                        <span>Type</span>
+                </article>
+                <article class="story">
+                    <figure class="story__image"><img width='100%' src="assets/images/story-7.jpg" alt=""></figure>
+                    <div class="story__description">
+                        <div class="story__tags">
+                            <h3>Angel Astorga</h3>
+                            <span>ART</span>
+                        </div>
+                        <h3 class="story__title">WHAT DO YOU DO?</h3>
+                        <p class="story__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, accusamus.</p>
+                        <span class="story__date">12.01.21</span>
                     </div>
-                    <h3>Title of article</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, accusamus.</p>
-                    <span>12.01.21</span>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <figure><img src="" alt=""></figure>
-                    <div>
-                        <span>Title of Image</span>
-                        <span>Type</span>
+                </article>
+                <article class="story">
+                    <figure class="story__image"><img width='100%' src="assets/images/story-8.jpg" alt=""></figure>
+                    <div class="story__description">
+                        <div class="story__tags">
+                            <h3>Angel Astorga</h3>
+                            <span>ART</span>
+                        </div>
+                        <h3 class="story__title">WHAT DO YOU DO?</h3>
+                        <p class="story__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, accusamus.</p>
+                        <span class="story__date">12.01.21</span>
                     </div>
-                    <h3>Title of article</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, accusamus.</p>
-                    <span>12.01.21</span>
-                </div>
-            </article>
-            <div><a href="">MORE STORIES</a></div>
-        </div>
-    </section>
-    <section class="films">
-        <div><h3>selected Films</h3></div>
-        <div>
-            <video src=""></video>
-            <video src=""></video>
-        </div>
-    </section>
-    <section class="blog">
-        <div>
-            <h3>Featured Blog Posts</h3>
-        </div>
-        <div>
-
-        </div>
-        <div>
-            <a href="">Visit Blog</a>
-        </div>
-    </section>
-    <footer class="footer">
+                </article>
+            </div>
+            <a class="stories-2__more" href="">MORE STORIES </a>
+        </section>
+        <section class="films">
+            <h3 class="films__title">SELECTED FILMS</h3>
+            <div class="films__videos">
+                <video src=""></video>
+                <video src=""></video>
+            </div>
+        </section>
+        <!-- <section class="blog">
+            <div>
+                <h3>Featured Blog Posts</h3>
+            </div>
+            <div>
+    
+            </div>
+            <div>
+                <a href="">Visit Blog</a>
+            </div>
+        </section>
+        <!-- <footer class="footer">
+    
         <ul>
             <li>Collaborate With Us</li>
             <li>Contact Us</li>
@@ -173,6 +186,8 @@
             <li>Terms & Conditions</li>
             <li>Your Brand 2021</li>
         </ul>
-    </footer>
+    </footer> -->
+
+</div>
 </body>
 </html>

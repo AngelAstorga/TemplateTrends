@@ -1,0 +1,15 @@
+.films{
+    position: relative;
+    z-index: 1001;
+    top:100vh;
+    height: auto;
+    background-color: $bgc-films;
+    padding-top: 20px;
+    font-family: 'Ubuntu', Helvetica, sans-serif;
+
+    &__title{
+        margin: 0;
+        text-align: center;
+        font-size: .8em;
+    }
+}
