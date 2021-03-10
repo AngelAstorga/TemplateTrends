@@ -1,6 +1,6 @@
 .stories-2{
     position: relative;
-    z-index: 1001;
+    z-index: $middle;
     top:calc(100vh);
     height: auto;
     width: 100%;
@@ -15,5 +15,6 @@
         text-decoration: none;
         color: $color-gray;
         font-size: .8em;
+        letter-spacing: .1em;
     }
 }

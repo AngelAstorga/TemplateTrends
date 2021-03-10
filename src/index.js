@@ -9,6 +9,11 @@ import story5Image from '@images/story-5.jpg';
 import story6Image from '@images/story-6.jpg';
 import story7Image from '@images/story-7.jpg';
 import story8Image from '@images/story-8.jpg';
+import blog1Image from '@images/blog-1.jpg';
+import blog2Image from '@images/blog-2.jpg';
+import blog3Image from '@images/blog-3.jpg';
+import blog4Image from '@images/blog-4.jpg';
+
 
 
 

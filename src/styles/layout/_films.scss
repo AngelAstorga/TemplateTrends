@@ -1,15 +1,53 @@
 .films{
     position: relative;
-    z-index: 1001;
+    z-index: $middle;
     top:100vh;
     height: auto;
     background-color: $bgc-films;
     padding-top: 20px;
     font-family: 'Ubuntu', Helvetica, sans-serif;
+    
 
     &__title{
+        letter-spacing: .1em;
         margin: 0;
         text-align: center;
         font-size: .8em;
+    }
+    &__videos{
+        height: 20%;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 15px;
+
+    }
+    &__wrapper1{
+        width: 49%;
+        position: relative;
+        padding-bottom: 22.25%;
+        overflow: hidden;
+        height:0 ;
+        iframe{
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__wrapper2{
+        width: 49%;
+        position: relative;
+        padding-bottom: 28.25%;
+        overflow: hidden;
+        height:0 ;
+        iframe{
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     }
 }

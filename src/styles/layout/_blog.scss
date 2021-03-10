@@ -1,6 +1,39 @@
-.blogs{
-    position: absolute;
-    z-index: 1001;
-    top:calc(100vh + 1050px);
-    height: 200px;
+.blog{
+    position: relative;
+    background-color: $bgc-blog;
+    z-index: $middle;
+    top:100vh;
+    font-family: 'Ubuntu', Helvetica, sans-serif;
+    padding: 45px 12% 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 12%;
+    padding-right: 12%;
+    &__title{
+        text-align: center;
+        margin-top: 0;
+        border-top: 1px solid #d9d9d9;
+        width: 37%;
+        padding-top: 25px;
+        font-size: .8em;
+        letter-spacing: .1em;
+    }
+    &__visitButton{
+        text-decoration: none;
+        color: $color-text-button;
+        letter-spacing: .1em;
+        font-size: .8em;
+        margin-top: 15px;
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
+    hr{
+        border:none;
+        background-color: #d9d9d9;
+        height: 1px;
+        width: 50%;
+    }
+
 }
