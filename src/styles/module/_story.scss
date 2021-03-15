@@ -1,11 +1,12 @@
 .stories{
-    margin-top: 35px;
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
+    width: 76%;
     align-items: center;
     justify-content: space-between;
     font-family: 'Ubuntu', Helvetica, sans-serif;
+    padding-bottom: 17px;
 
 }
 
@@ -23,56 +24,76 @@
         background-color: $bgc-story;
         display: flex;
         flex-direction: column;
+        position: relative;
+    }
+    &__description::before{
+        position: absolute;
+        display: block;
+        content: " ";
+        background-color: white;
+        left: 20px;
+        width: 10px;
+        height: 10px;
+        top: -5px;
+        transform: rotate(45deg);
+        
     }
     &__tags{
         background-color: transparent;
         display: flex;
         align-items: center;
         justify-content: start;
-        margin-left: 15px;;
+        margin-left: 15px;
+        padding-bottom: 16px;
 
         h3::after{
             content: '|';
-            font-weight: 700;
-            font-size: 0.8em;
+            display: inline-block;
+            font-weight: 500;
+            font-size: 1em;
             margin-left: 3px;
             color: #000;
+            padding-top: 3px;
 
         }
-        h3{
+        h3{ margin: 0;
             font-weight: 400;
-            font-size: 1em;
+            font-size: .75em;
             color: $color-gray;
             letter-spacing: .07em;
+            padding-top: 3px;
             
         }
         span{
+            display: inline-block;
             margin-left: 3px;
             font-weight: 400;
             font-size: 0.7em;
-            margin-top: 3px;
+            padding-top: 6px;
         }
     }
     &__title{
-        border-bottom: 1px solid #9dd9c5;
+        border-bottom: 2px solid #9dd9c5;
         width: fit-content;
         background-color: transparent;
         margin-left: 15px;
         font-size: 1.1em;
         margin-top: 0;
-        margin-bottom: 0;
-        padding-bottom: 4px;
+        margin-bottom: -11px;
+        padding-bottom: 7px;
     }
     &__text{
-        letter-spacing: .1em;
-        font-weight: 300;
+        letter-spacing: .05em;
+        font-weight: 400;
         margin-left: 15px;
         margin-right: 40px;
-        
+        font-size: .9em;
     }
     &__date{
         align-self: flex-end;
         margin-right: 25px;
-        margin-bottom: 25px;
+        margin-bottom: 17px;
+        font-style: italic;
+        font-size: .78em;
     }
 }

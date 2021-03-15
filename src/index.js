@@ -2,6 +2,7 @@ import '@styles/main.scss';
 import mainImage from '@images/universe.jpg';
 import menuImage from '@images/menu.svg';
 import arrowImage from '@images/arrow.svg';
+import arrowlImage from '@images/arrow-l.svg';
 import story1Image from '@images/story-1.jpg';
 import story2Image from '@images/story-2.jpg';
 import story3Image from '@images/story-3.jpg';

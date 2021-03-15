@@ -1,7 +1,7 @@
 .stories-1{
     position: relative;
     z-index: $middle;
-    top: calc(100vh);
+    top: 100vh;
     height: auto;
     width: 100%;
     background-color: $bgc-stories;
@@ -26,27 +26,32 @@
     }
     &__title{
         font-family: 'Ubuntu', Helvetica, sans-serif;
-        font-weight: 400;
+        font-weight: 500;
         letter-spacing: .2em;
+        font-size: 1.2em;
     }
     &__options{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 70%;
-        letter-spacing: .12em;
+        width: 76%;
+        letter-spacing: .05em;
         font-size: .8em;
         font-weight: 500;
+        padding-top: 35px;
     }
     &__sort{
         border-bottom: 1px solid black;
-        width: 150px;
+        width: 200px;
         font-family: 'Ubuntu', Helvetica, sans-serif;
         line-height: 2em;
         font-size: .9em;
+        padding-left: 10px;
+        padding-bottom: 3px;
         span{
             display: inline-block;
-            margin-left: 60px;
+            margin-left: 115px;
+            font-size: 1.5em;
         }
     }
     &__list{
@@ -60,6 +65,13 @@
         text-decoration: none;
         color: black;
         font-family: 'Ubuntu', Helvetica, sans-serif;
+    }
+    &__arrow{
+        background-image: url('@images/arrow.svg');
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        margin-left: -3px;
     }
 }
 
