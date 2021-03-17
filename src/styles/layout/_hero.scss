@@ -15,7 +15,12 @@
         flex-direction: column;
         position: relative;
         top: 54vh;
+
+        input[type=radio] {
+            display: none;
+        }
     }
+
     &__title{
         margin: 0;
         font-size: 3rem;
@@ -28,5 +33,79 @@
         border: 2px solid white;
         color: white;
         font-weight: 400;
+    }
+    &__controls{
+        width: 90%;
+        height: 60px;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        margin-top: -50px;
+        font-size: 1.2em;
+        color: white;
+        overflow: hidden;
+        cursor: pointer;
+        hr{
+            margin: 0;
+            border: none;
+            background-color: white;
+            width: 40px;
+            height: 1px;
+        }
+    }
+    &__controlRight{
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        transform: rotate(90deg);
+        hr:nth-child(2){
+            margin-left: 0px;
+            transition: 1s;
+        }
+        hr:nth-child(1){
+            margin-left: 40px;
+            transition: 1s;
+        }
+        
+    }
+    &__controlRight:hover hr:nth-child(2){
+        margin-left: 40px;
+    }
+    &__controlRight:hover hr:nth-child(1){
+        margin-left: 0px;
+    }
+    &__controlLeft{
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        transform: rotate(-90deg);
+        hr:nth-child(1){
+            margin-left: -40px;
+            transition: 1s;
+        }
+        hr:nth-child(2){
+            margin-left: 0;
+            transition: 1s;
+        }
+        
+    }
+    &__controlLeft:hover hr:nth-child(1){
+        margin-left: 0;
+    }
+    &__controlLeft:hover hr:nth-child(2){
+        margin-left: -40px;
+    }
+    &__arrowDown{
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 100px;
+        right: 70px;
+        margin-bottom: -190px;
+        svg{
+
+            cursor: pointer;
+        }
     }
 }

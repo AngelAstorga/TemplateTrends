@@ -15,11 +15,20 @@
     </div>
     <section class="hero">
         <div class="hero__wrapper">
+            <input type="radio" name="sliderh" id="slideh1" checked>
+            <input type="radio" name="sliderh" id="slideh2">
+            <input type="radio" name="sliderh" id="slideh3">
             <h2 class="hero__title">A Cotton Canvas</h2>
             <button class="hero__button"> READ THIS STORY</button>
-        </div>
+            <div class="hero__controls">
+                <label class="hero__controlLeft"><hr>Prev<hr></label>
+                <label class="hero__controlRight"><hr>Next<hr></label>
+            </div>
+            <div class="hero__arrowDown">
+                <a href="#content"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 100">%0A%09<path d="m 10 0 l 0 100 z m -10 90 l 10 10 z m 20 0 l -10 10 z " fill="#ffff00" stroke="white" stroke-width="1" />%0A</svg></a>
+            </div>
     </section>
-    <div class="content">
+    <div class="content" id="content">
         <section class="space-1">
             <div class="space-1__phrase"><h2>design <span>and </span> travel</h2></div>
             <div class="space-1__description"> <p><span>ABOUT US</span><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis unde repudiandae sapiente</p></div>
@@ -171,6 +180,7 @@
                 <article class="story">
                     <figure class="story__image"><img width='100%' src="assets/images/story-6.jpg" alt=""></figure>
                     <div class="story__description">
+                        <div class="story__offer">IN PRINT</div>
                         <div class="story__tags">
                             <h3>Angel Astorga</h3>
                             <span>ART</span>
@@ -183,6 +193,7 @@
                 <article class="story">
                     <figure class="story__image"><img width='100%' src="assets/images/story-7.jpg" alt=""></figure>
                     <div class="story__description">
+                        <div class="story__offer">IN PRINT</div>
                         <div class="story__tags">
                             <h3>Angel Astorga</h3>
                             <span>ART</span>

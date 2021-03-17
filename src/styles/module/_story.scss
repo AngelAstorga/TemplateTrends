@@ -38,6 +38,18 @@
         transform: rotate(45deg);
         
     }
+    &__offer{
+        position: absolute;
+        right: 0;
+        width: 22%;
+        height: 21px;
+        background-color: #3a9d5d;
+        text-align: center;
+        color: white;
+        font-size: .7em;
+        padding-top: 3px;
+        box-sizing: border-box;
+    }
     &__tags{
         background-color: transparent;
         display: flex;
