@@ -1,5 +1,8 @@
 import '@styles/main.scss';
 import mainImage from '@images/universe.jpg';
+import slideh1Image from '@images/slideh1.jpg';
+import slideh2Image from '@images/slideh2.jpg';
+import slideh3Image from '@images/slideh3.jpg';
 import menuImage from '@images/menu.svg';
 import arrowImage from '@images/arrow.svg';
 import arrowlImage from '@images/arrow-l.svg';

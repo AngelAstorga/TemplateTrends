@@ -451,111 +451,204 @@ figure {
   cursor: pointer;
 }
 
-.hero {
-  background-image: url(../assets/images/universe.jpg);
-  background-size: cover;
-  box-sizing: border-box;
-  width: 95vw;
-  transform: translateX(2.2%);
-  height: 90vh;
-  position: fixed;
-  top: 50px;
-  z-index: 0;
-}
-.hero__wrapper {
+#wrapper {
+  position: absolute;
+  top: 65%;
+  width: 100%;
+  height: 100px;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative;
-  top: 54vh;
 }
-.hero__wrapper input[type=radio] {
-  display: none;
-}
-.hero__title {
+
+#title {
   margin: 0;
   font-size: 3rem;
   color: #fff;
 }
-.hero__button {
+
+#button {
   background-color: transparent;
   padding: 10px 15px;
   margin-top: 25px;
   border: 2px solid white;
   color: white;
   font-weight: 400;
-}
-.hero__controls {
-  width: 90%;
-  height: 60px;
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  margin-top: -50px;
-  font-size: 1.2em;
-  color: white;
-  overflow: hidden;
+  transition: 1s;
   cursor: pointer;
 }
-.hero__controls hr {
+
+#button:hover {
+  background-color: white;
+  color: black;
+  font-weight: 700;
+}
+
+#arrowDown {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 100px;
+  right: 50px;
+  top: 50px;
+}
+#arrowDown svg {
+  cursor: pointer;
+}
+
+#sliderh {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+#sliderh input {
+  display: none;
+}
+
+#slideh1:checked ~ #imagesh img:nth-child(1) {
+  margin-left: 0%;
+}
+
+#slideh2:checked ~ #imagesh img:nth-child(1) {
+  margin-left: -25%;
+}
+
+#slideh3:checked ~ #imagesh img:nth-child(1) {
+  margin-left: -50%;
+}
+
+#slideh4:checked ~ #imagesh img:nth-child(1) {
+  margin-left: -75%;
+}
+
+#imagesh {
+  width: 400%;
+  display: flex;
+}
+
+#imagesh img {
+  display: block;
+  width: 25%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#controlshl {
+  color: white;
+  width: 40px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 4.4%;
+  box-sizing: border-box;
+  overflow: hidden;
+  transform: rotate(-90deg);
+  cursor: pointer;
+}
+#controlshl hr {
   margin: 0;
   border: none;
   background-color: white;
   width: 40px;
   height: 1px;
+  display: block;
 }
-.hero__controlRight {
+#controlshl hr:nth-child(1) {
+  margin-left: -40px;
+  transition: 1s;
+}
+#controlshl hr:nth-child(6) {
+  margin-left: 0px;
+  transition: 1s;
+}
+
+#controlshl:hover hr:nth-child(1) {
+  margin-left: 0px;
+}
+#controlshl:hover hr:nth-child(6) {
+  margin-left: -40px;
+}
+
+#controlshl label {
+  display: none;
+  width: auto;
+  height: 20px;
+  cursor: pointer;
+}
+
+#slideh1:checked ~ #controlshl label:nth-child(5),
+#slideh2:checked ~ #controlshl label:nth-child(2),
+#slideh3:checked ~ #controlshl label:nth-child(3),
+#slideh4:checked ~ #controlshl label:nth-child(4) {
+  display: block;
+}
+
+#slideh1:checked ~ #controlshl label:nth-child(5)::after,
+#slideh2:checked ~ #controlshl label:nth-child(2)::after,
+#slideh3:checked ~ #controlshl label:nth-child(3)::after,
+#slideh4:checked ~ #controlshl label:nth-child(4)::after {
+  content: "Prev";
+  font-size: 1.2em;
+}
+
+#controlshr {
+  color: white;
   width: 40px;
-  height: 40px;
+  height: auto;
+  position: absolute;
+  top: 52%;
+  right: 4.4%;
+  box-sizing: border-box;
   overflow: hidden;
   transform: rotate(90deg);
-}
-.hero__controlRight hr:nth-child(2) {
-  margin-left: 0px;
-  transition: 1s;
-}
-.hero__controlRight hr:nth-child(1) {
-  margin-left: 40px;
-  transition: 1s;
-}
-.hero__controlRight:hover hr:nth-child(2) {
-  margin-left: 40px;
-}
-.hero__controlRight:hover hr:nth-child(1) {
-  margin-left: 0px;
-}
-.hero__controlLeft {
-  width: 40px;
-  height: 40px;
-  overflow: hidden;
-  transform: rotate(-90deg);
-}
-.hero__controlLeft hr:nth-child(1) {
-  margin-left: -40px;
-  transition: 1s;
-}
-.hero__controlLeft hr:nth-child(2) {
-  margin-left: 0;
-  transition: 1s;
-}
-.hero__controlLeft:hover hr:nth-child(1) {
-  margin-left: 0;
-}
-.hero__controlLeft:hover hr:nth-child(2) {
-  margin-left: -40px;
-}
-.hero__arrowDown {
-  position: absolute;
-  display: block;
-  width: 20px;
-  height: 100px;
-  right: 70px;
-  margin-bottom: -190px;
-}
-.hero__arrowDown svg {
   cursor: pointer;
+}
+#controlshr hr {
+  margin: 0;
+  border: none;
+  background-color: white;
+  width: 40px;
+  height: 1px;
+  display: block;
+}
+#controlshr hr:nth-child(1) {
+  margin-left: 40px;
+  transition: 1s;
+}
+#controlshr hr:nth-child(6) {
+  margin-left: 0px;
+  transition: 1s;
+}
+
+#controlshr:hover hr:nth-child(1) {
+  margin-left: 0px;
+}
+#controlshr:hover hr:nth-child(6) {
+  margin-left: 40px;
+}
+
+#controlshr label {
+  display: none;
+  width: auto;
+  height: 20px;
+  cursor: pointer;
+}
+
+#slideh1:checked ~ #controlshr label:nth-child(3),
+#slideh2:checked ~ #controlshr label:nth-child(4),
+#slideh3:checked ~ #controlshr label:nth-child(5),
+#slideh4:checked ~ #controlshr label:nth-child(2) {
+  display: block;
+}
+
+#slideh1:checked ~ #controlshr label:nth-child(3)::after,
+#slideh2:checked ~ #controlshr label:nth-child(4)::after,
+#slideh3:checked ~ #controlshr label:nth-child(5)::after,
+#slideh4:checked ~ #controlshr label:nth-child(2)::after {
+  content: "Next";
+  font-size: 1.2em;
 }
 
 .content {
